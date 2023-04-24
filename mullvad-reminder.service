@@ -4,7 +4,7 @@ After=network.target
 
 [Service]
 Type=simple
-ExecStart=mullvad status | grep "Disconnected" && "/opt/Mullvad VPN/mullvad-vpn" %U
+ExecStart=mullvad status | grep "Disconnected" && "/opt/Mullvad VPN/mullvad-gui" %U
 Restart=always
 RestartSec=20
 StandardOutput=syslog
