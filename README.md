@@ -6,6 +6,6 @@ Install:
 
 ```
 sudo wget https://github.com/trytomakeyouprivate/Mullvad-Reminder/raw/main/mullvad-reminder.service -o /etc/systemd/system/mullvad-reminder &&\
-sudo systemctl enable mullvad-reminder &&\
+sudo systemctl enable mullvad-reminder && sudo systemctl start mullvad-reminder &&\
 echo "Mullvad-reminder service enabled!"
 ```
